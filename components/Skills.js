@@ -31,7 +31,6 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               {/* images */}
               <div className="m-auto">
-                flyctl deploy
                 <Image src={Css} width="64px" height="64px" alt="/" />
               </div>
               <div className="flex flex-col items-center justify-center">
