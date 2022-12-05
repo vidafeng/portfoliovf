@@ -12,7 +12,7 @@ const Main = () => {
             I build things for the web
           </p>
           <h1 className="text-gray-700 py-4">
-            Hi, I'm <span className="text-[#F08E80]">Vida</span>.
+            Hi, I&apos;m <span className="text-[#F08E80]">Vida</span>.
           </h1>
           <h1 className="text-gray-600 py-1">software engineer</h1>
 
