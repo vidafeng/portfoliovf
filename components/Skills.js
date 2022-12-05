@@ -11,7 +11,7 @@ const Skills = () => {
         <p className="text-xl tracking-widest uppercase text-[#F08E80]">
           Skills
         </p>
-        <h2 className="py-4">Technologies I've Worked With</h2>
+        <h2 className="py-4">Technologies I&aposve Worked With</h2>
         {/* grid container */}
         {/* auto 1 col on small devices // md 2 cols etc */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -31,6 +31,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               {/* images */}
               <div className="m-auto">
+                flyctl deploy
                 <Image src={Css} width="64px" height="64px" alt="/" />
               </div>
               <div className="flex flex-col items-center justify-center">
