@@ -5,7 +5,7 @@ import Github from "../public/assets/skills/github.png";
 import Html from "../public/assets/skills/html.png";
 import Javascript from "../public/assets/skills/javascript.png";
 import Node from "../public/assets/skills/node.png";
-import Postgresql from "../public/assets/skills/postgresql.png";
+import Postgresqlpng from "../public/assets/skills/postgresql.png";
 import Reactpng from "../public/assets/skills/react.png";
 import Nextjs from "../public/assets/skills/nextjs.png";
 
@@ -96,7 +96,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               {/* images */}
               <div className="m-auto">
-                <Image src={Postgresql} width={100} height={100} alt="/" />
+                <Image src={Postgresqlpng} width={100} height={100} alt="/" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>PostgreSQL</h3>
