@@ -1,6 +1,8 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import Link from "next/link";
 
 const Contact = () => {
   const form = useRef();
@@ -26,27 +28,19 @@ const Contact = () => {
   };
   return (
     <div className="w-full lg:h-screen">
-      {/* <div className="grid lg:grid-cols-5 gap-8"> */}
       <div className="max-w-[1240px] mx-auto px-2 py-80 w-full">
         <div className="p-6 border border-gray-300 sm:rounded-md">
-          {/* <section className="bg-white dark:bg-gray-900"> */}
-          <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <div className="py-8 pb-16 lg:py-16 px-4 mx-auto max-w-screen-md">
             <p className="uppercase text-xl tracking-widest text-[#F08E80]">
               Contact
             </p>
             <h2 className="py-4">Let&apos;s Connect</h2>
-            {/* <h2 class="mb-4 text-4xl tracking-tight text-center text-gray-900 dark:text-white">
-              Let&apos;s Connect
-            </h2> */}
-            {/* <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-              Got a technical issue? Want to send feedback about a beta feature?
-              Need details about our Business plan? Let us know.
-            </p> */}
+
             <form className="space-y-8 py-3" ref={form} onSubmit={sendEmail}>
               <div>
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 pt-6"
+                  className="uppercase block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 pt-6"
                 >
                   Email
                 </label>
@@ -61,7 +55,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="subject"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  className="uppercase block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   Subject
                 </label>
@@ -76,7 +70,7 @@ const Contact = () => {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                  className="uppercase block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
                 >
                   Message
                 </label>
@@ -94,9 +88,17 @@ const Contact = () => {
                 Send
               </button>
             </form>
-            {/* </div> */}
-            {/* </section> */}
           </div>
+        </div>
+        <div className="flex justify-center py-12 ">
+          <Link href="/">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-100 ease-in duration-300">
+              <HiOutlineChevronDoubleUp
+                className="m-auto text-[#F08E80]"
+                size={20}
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
