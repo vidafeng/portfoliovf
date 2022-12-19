@@ -27,7 +27,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] mx-auto px-2 py-80 w-full">
         <div className="p-6 border border-gray-300 sm:rounded-md">
           <div className="py-8 pb-16 lg:py-16 px-4 mx-auto max-w-screen-md">
