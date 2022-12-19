@@ -21,8 +21,8 @@ const Projects = () => {
             Yelp Fusion API to create a list of possible restaurants that
             match your desired location and restaurant preference."
             backgroundImg={delicioImg}
-            projectUrl="/delicio"
-            githubUrl="/"
+            projectUrl="https://delicio.fly.dev/"
+            githubUrl="https://github.com/capstone-delicio/delicio"
           />
           <SingleProj
             title="TeaTokens"
@@ -31,7 +31,7 @@ const Projects = () => {
             single-page application using Node.js, React, React-Redux,
             Express, Sequelize, PostgreSQL, and Chakra-UI."
             backgroundImg={teatokenImg}
-            projectUrl="/"
+            projectUrl="http://teatokens.herokuapp.com/"
             githubUrl="https://github.com/teamGoldenrod/TeaTokens"
           />
         </div>

@@ -13,7 +13,7 @@ const SingleProj = ({
   githubUrl,
 }) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-70">
       <Image
         className="rounded-xl group-hover:opacity-10 w-full"
         src={backgroundImg}
@@ -25,7 +25,7 @@ const SingleProj = ({
         </h3>
         <p className="pb-4 pt-2 text-white text-center">{description}</p>
         <div className="pt-10 text-right space-x-5">
-          <button className="py-2 px-4 bg-transparent inline-flex items-center">
+          <button className="py-2 px-4 bg-transparent inline-flex items-center hover:opacity-80">
             <FontAwesomeIcon
               className="fill-current w-4 h-4 mr-2"
               icon={faExternalLink}
@@ -36,7 +36,7 @@ const SingleProj = ({
             </Link>
           </button>
 
-          <button className="py-2 px-4 bg-transparent inline-flex items-center">
+          <button className="py-2 px-4 bg-transparent inline-flex items-center hover:opacity-80">
             <FontAwesomeIcon
               className="fill-current w-4 h-4 mr-2"
               icon={faGithub}
