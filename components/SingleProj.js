@@ -13,17 +13,17 @@ const SingleProj = ({
   githubUrl,
 }) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-70">
+    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-opacity-100 transition duration-300 ease-in-out">
       <Image
         className="rounded-xl group-hover:opacity-10 w-full"
         src={backgroundImg}
         alt="/"
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h3 className="uppercase text-2xl text-white tracking-wider text-center">
+        <h3 className="uppercase text-2xl text-[#F08E80] tracking-wider text-center">
           {title}
         </h3>
-        <p className="pb-4 pt-2 text-white text-center">{description}</p>
+        <p className="pb-4 pt-2 text-gray-700 text-center">{description}</p>
         <div className="pt-10 text-right space-x-5">
           <button className="py-2 px-4 bg-transparent inline-flex items-center hover:opacity-80">
             <FontAwesomeIcon
