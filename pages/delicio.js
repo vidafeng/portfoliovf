@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import delicioImg from "../public/assets/proj/delicio-proj.png";
+import { RiRadioButtonFill } from "react-icons/ri";
 
 const delicio = () => {
   return (
@@ -46,6 +48,52 @@ const delicio = () => {
           <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           <button className="px-8 py-2 mt-4 mr-8">Code</button>
         </div>
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="p-2">
+            <p className="text-center font-bold pb-2">Technologies</p>
+            <div className="grid grid-cols-3 md:grid-cols-1">
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="mr-2" />
+                Javascript
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="mr-2" />
+                React
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="mr-2" />
+                Redux
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="mr-2" />
+                PostgreSQL
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="mr-2" />
+                Node
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="mr-2" />
+                Express
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="mr-2" />
+                Material-UI
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="mr-2" />
+                PWA
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="mr-2" />
+                Yelp API
+              </p>
+            </div>
+          </div>
+        </div>
+        <Link href="/#projects">
+          <p>Back</p>
+        </Link>
       </div>
     </div>
   );
