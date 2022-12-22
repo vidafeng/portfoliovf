@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import delicioImg from "../public/assets/proj/delicio-proj.png";
+import teatokensImg from "../public/assets/proj/teatokens-proj.jpeg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const delicio = () => {
+const teatokens = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -15,12 +15,12 @@ const delicio = () => {
         <Image
           className="absolute z-1"
           fill="current"
-          src={delicioImg}
-          alt="delicio"
+          src={teatokensImg}
+          alt="teatokens"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Delicio</h2>
-          <h3>Tinder Meets Yelp Progressive Web Application</h3>
+          <h2 className="py-2">TeaTokens</h2>
+          <h3>E-Commerce Website</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
@@ -28,22 +28,19 @@ const delicio = () => {
           <p className="py-2">Project</p>
           <h2 className="pb-3">Description</h2>
           <p className="py-2">
-            Delicio is a a fun Progressive Web App available on both mobile and
-            computer web browser to help you and your friends answer the age old
-            question: where should we go eat? As many of us have experienced in
-            the past, getting a group of people to agree upon a restaurant can
-            be a tedious back and forth on a never ending group text. Let
-            Delicio help you and your friends get to the point and decide where
-            to go by letting your eyes decide. After all, a picture is worth a
-            thousand bites!
+            TeaTokens is an e-commerce website with an extensive tea product
+            catalog, shopping cart, and checkout. Fullstack, single-page
+            application built using Node.js, React, React-Redux, Express,
+            Sequelize, PostgreSQL, and Chakra-UI.
           </p>
           <p>
-            Users are able to input preferences including location, cuisine, and
-            number of restaurant choices. Inspired by Tinder and Yelp, you and
-            your friends vote in a fun and unbiased way by swiping right on the
-            dishes that make your mouth water! Once everybody casts their votes,
-            Delicio will deliver to you the winning restaurant. A list of
-            restaurant choices is made possible with Yelp API.
+            Users can sign up/login, edit user information, and user data is
+            secured through JSON web tokens. Logged-in users and guests can view
+            all products, search for a specific product, click a single product
+            for more details, and add a product to their cart. Our team
+            implemented cart persistence on refresh using local storage. Admin
+            accounts have backend access to add, edit, and remove products from
+            the tea database.
           </p>
           {/* <button className="px-8 py-2 mt-4 mr-8">Demo</button> */}
           {/* <button className="px-8 py-2 mt-4 mr-8">Code</button> */}
@@ -54,7 +51,7 @@ const delicio = () => {
                 icon={faExternalLink}
                 size="xl"
               />
-              <Link target="_blank" href="https://delicio.fly.dev">
+              <Link target="_blank" href="http://teatokens.herokuapp.com/">
                 <span>Demo</span>
               </Link>
             </button>
@@ -65,7 +62,10 @@ const delicio = () => {
                 icon={faGithub}
                 size="xl"
               />
-              <Link target="_blank" href="">
+              <Link
+                target="_blank"
+                href="https://github.com/teamGoldenrod/TeaTokens"
+              >
                 <span>Code</span>
               </Link>
             </button>
@@ -101,15 +101,7 @@ const delicio = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="mr-2" />
-                Material-UI
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="mr-2" />
-                PWA
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="mr-2" />
-                Yelp API
+                Chakra-UI
               </p>
             </div>
           </div>
@@ -122,4 +114,4 @@ const delicio = () => {
   );
 };
 
-export default delicio;
+export default teatokens;

@@ -23,7 +23,9 @@ const Projects = () => {
             backgroundImg={delicioImg}
             projectUrl="https://delicio.fly.dev/"
             githubUrl="https://github.com/capstone-delicio/delicio"
+            moreInfo="/delicio"
           />
+
           <SingleProj
             title="TeaTokens"
             description="An e-commerce website with an extensive tea product catalog,
@@ -33,6 +35,7 @@ const Projects = () => {
             backgroundImg={teatokenImg}
             projectUrl="http://teatokens.herokuapp.com/"
             githubUrl="https://github.com/teamGoldenrod/TeaTokens"
+            moreInfo="/teatokens"
           />
         </div>
       </div>
