@@ -16,10 +16,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-1 gap-8">
           <SingleProj
             title="Delicio"
-            description="A Progressive Web App that helps you and your friends decide
-            where to eat in a fun and collaborative way. Delicio leverages
-            Yelp Fusion API to create a list of possible restaurants that
-            match your desired location and restaurant preference."
+            description="A Progressive Web App inspired by Yelp and Tinder"
             backgroundImg={delicioImg}
             projectUrl="https://delicio.fly.dev/"
             githubUrl="https://github.com/capstone-delicio/delicio"
@@ -28,10 +25,7 @@ const Projects = () => {
 
           <SingleProj
             title="TeaTokens"
-            description="An e-commerce website with an extensive tea product catalog,
-            shopping cart, and checkout. My team and I built this full-stack
-            single-page application using Node.js, React, React-Redux,
-            Express, Sequelize, PostgreSQL, and Chakra-UI."
+            description="E-commerce website with an extensive tea catalog"
             backgroundImg={teatokenImg}
             projectUrl="http://teatokens.herokuapp.com/"
             githubUrl="https://github.com/teamGoldenrod/TeaTokens"

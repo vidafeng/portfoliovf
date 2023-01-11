@@ -28,7 +28,7 @@ const SingleProj = ({
 
         <p className="pb-4 pt-2 text-gray-700 text-center">{description}</p>
 
-        <div className="pt-10 text-right space-x-5">
+        <div className="pt-10 text-center space-x-5">
           <button className="py-2 px-4 bg-transparent inline-flex items-center hover:opacity-80">
             <FontAwesomeIcon
               className="fill-current w-4 h-4 mr-2"

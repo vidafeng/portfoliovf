@@ -65,7 +65,10 @@ const delicio = () => {
                 icon={faGithub}
                 size="xl"
               />
-              <Link target="_blank" href="">
+              <Link
+                target="_blank"
+                href="https://github.com/capstone-delicio/delicio"
+              >
                 <span>Code</span>
               </Link>
             </button>
