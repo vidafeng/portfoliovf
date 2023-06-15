@@ -38,7 +38,7 @@ const Doodleco = () => {
             Features include user signup and login, viewing all products and
             details on a single product, customer art page, order confirmation
             page, and Paypal payment integration. Database is built using
-            Mongoose schemas and models, and leveraged NextAuth and JWWT for
+            Mongoose schemas and models, and leveraged NextAuth.js and JWWT for
             user authentication.
           </p>
           {/* <button className="px-8 py-2 mt-4 mr-8">Demo</button> */}
