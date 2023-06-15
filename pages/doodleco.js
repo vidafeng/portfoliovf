@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import delicioImg from "../public/assets/proj/delicio-proj.png";
+import doodleImg from "../public/assets/proj/doodleco-proj.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Delicio = () => {
+const Doodleco = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
@@ -15,12 +15,12 @@ const Delicio = () => {
         <Image
           className='absolute z-1'
           fill='current'
-          src={delicioImg}
-          alt='delicio'
+          src={doodleImg}
+          alt='doodleco'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Delicio</h2>
-          <h3>Tinder Meets Yelp Progressive Web Application</h3>
+          <h2 className='py-2'>Doodle & Co</h2>
+          <h3>E-Commerce Application</h3>
         </div>
       </div>
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
@@ -28,22 +28,18 @@ const Delicio = () => {
           <p className='py-2'>Project</p>
           <h2 className='pb-3'>Description</h2>
           <p className='py-2'>
-            Delicio is a a fun Progressive Web App available on both mobile and
-            computer web browser to help you and your friends answer the age old
-            question: where should we go eat? As many of us have experienced in
-            the past, getting a group of people to agree upon a restaurant can
-            be a tedious back and forth on a never ending group text. Let
-            Delicio help you and your friends get to the point and decide where
-            to go by letting your eyes decide. After all, a picture is worth a
-            thousand bites!
+            Doodle and Co is an ecommerce fullstack application with a pup
+            accessories catalog, shopping cart, and checkout. Built using
+            Nextjs, React, React-Redux, Chakra UI, MongoDB, Mongoose, and Paypal
+            payment integration. Includes a responsive layout that is both
+            mobile and dark mode friendly.
           </p>
           <p>
-            Users are able to input preferences including location, cuisine, and
-            number of restaurant choices. Inspired by Tinder and Yelp, you and
-            your friends vote in a fun and unbiased way by swiping right on the
-            dishes that make your mouth water! Once everybody casts their votes,
-            Delicio will deliver to you the winning restaurant. A list of
-            restaurant choices is made possible with Yelp API.
+            Features include user signup and login, viewing all products and
+            details on a single product, customer art page, order confirmation
+            page, and Paypal payment integration. Database is built using
+            Mongoose schemas and models, and leveraged NextAuth and JWWT for
+            user authentication.
           </p>
           {/* <button className="px-8 py-2 mt-4 mr-8">Demo</button> */}
           {/* <button className="px-8 py-2 mt-4 mr-8">Code</button> */}
@@ -54,7 +50,7 @@ const Delicio = () => {
                 icon={faExternalLink}
                 size='xl'
               />
-              <Link target='_blank' href='https://delicio.fly.dev'>
+              <Link target='_blank' href='https://doodleco.vercel.app/'>
                 <span>Demo</span>
               </Link>
             </button>
@@ -67,7 +63,7 @@ const Delicio = () => {
               />
               <Link
                 target='_blank'
-                href='https://github.com/capstone-delicio/delicio'
+                href='https://github.com/vidafeng/doodle-and-co'
               >
                 <span>Code</span>
               </Link>
@@ -84,35 +80,27 @@ const Delicio = () => {
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='mr-2' />
-                React
+                Next.js
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='mr-2' />
-                Redux
+                React-Redux
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='mr-2' />
-                PostgreSQL
+                Mongoose
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='mr-2' />
-                Node
+                MongoDB
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='mr-2' />
-                Express
+                NextAuth.js
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='mr-2' />
-                Material-UI
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='mr-2' />
-                PWA
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='mr-2' />
-                Yelp API
+                Chakra-UI
               </p>
             </div>
           </div>
@@ -125,4 +113,4 @@ const Delicio = () => {
   );
 };
 
-export default Delicio;
+export default Doodleco;
